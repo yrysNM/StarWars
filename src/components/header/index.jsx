@@ -7,6 +7,7 @@ import { ReactComponent as TwitterLogoSVG } from "../../assets/twitter.svg";
 import { ReactComponent as YoutubeLogoSVG } from "../../assets/youtube.svg";
 import { TextField } from "@mui/material";
 import React from "react";
+
 //массив данных ссылок
 const swLinks = [
   {
@@ -52,7 +53,10 @@ export const Header = ({ fan }) => {
       <StarWarsLogoSVG />
       <div className="search-layout">
         <IconSearchSVG className="search-icon" />
-        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+        <TextField sx={{
+          backgroundColor: "rgba(255, 255, 255, .6)", 
+          color: "white",
+          borderRadius: "5px",}}id="outlined-basic" label="Search" variant="outlined" />
         {/* <input placeholder="Search Star Wars" type="text" /> */}
         <div style={{ color: "white", paddingTop: "1rem" }}>
           I am fan of: {fan}

@@ -114,3 +114,7 @@ hr {
   background-color: rgb(37, 33, 81);
   transform: translateY(4px);
 }
+
+.white-content {
+  background: #e4e4e4;
+}
