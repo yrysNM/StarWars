@@ -43,6 +43,13 @@ export const Content = ({ handleCreateFan }) => {
             <ItemSpisok>Orbital Period: {planet.orbital_period}</ItemSpisok>
           </ItemLists>
         ))}
+
+      {selector === "Starships" && swStarships.map((ships) => (
+        <ItemLists key={ships.name} item={ships} type="ship">
+          <ItemSpisok>model: {ships.model}</ItemSpisok>
+          <ItemSpisok>manufacturer: {ships.manufacturer}</ItemSpisok>
+        </ItemLists>
+      ))};
     </div>
   );
 };
